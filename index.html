@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JPG Image Gallery</title>
+    <style>
+        .image-gallery img {
+            margin: 10px; /* 画像の間に10pxの空間をあける */
+        }
+    </style>
 </head>
 <body>
     <h1>JPG Image Gallery</h1>
-    <div>
-        <!-- Loop through y0 to y7 and x0 to x7 -->
+    <div class="image-gallery">
+        <!-- Loop through y0 to y6 and x0 to x6 -->
         <script>
-            for (let y = 0; y <= 7; y++) {
-                for (let x = 0; x <= 7; x++) {
+            for (let y = 0; y <= 6; y++) {
+                for (let x = 0; x <= 6; x++) {
                     document.write(`<img src="split_y${y}_x${x}.jpg" alt="Image y${y} x${x}">`);
                 }
             }
@@ -19,3 +24,4 @@
     </div>
 </body>
 </html>
+
