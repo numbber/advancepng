@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPG Image Gallery</title>
+</head>
+<body>
+    <h1>JPG Image Gallery</h1>
+    <div>
+        <!-- Loop through y0 to y7 and x0 to x7 -->
+        <script>
+            for (let y = 0; y <= 7; y++) {
+                for (let x = 0; x <= 7; x++) {
+                    document.write(`<img src="split_y${y}_x${x}.jpg" alt="Image y${y} x${x}">`);
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
